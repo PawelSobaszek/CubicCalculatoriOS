@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7BB22F28B7969900057913 /* SummationDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB22E28B7969900057913 /* SummationDataService.swift */; };
+		CE7BB23128B7A47700057913 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */; };
 		CEDE1F6B28B688F8008DD78A /* Cubic_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F6A28B688F8008DD78A /* Cubic_CalculatorApp.swift */; };
-		CEDE1F6D28B688F8008DD78A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F6C28B688F8008DD78A /* ContentView.swift */; };
+		CEDE1F6D28B688F8008DD78A /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F6C28B688F8008DD78A /* CalculatorView.swift */; };
 		CEDE1F6F28B688FA008DD78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDE1F6E28B688FA008DD78A /* Assets.xcassets */; };
-		CEDE1F7228B688FA008DD78A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDE1F7128B688FA008DD78A /* Preview Assets.xcassets */; };
-		CEDE1F7428B688FA008DD78A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F7328B688FA008DD78A /* Persistence.swift */; };
-		CEDE1F7728B688FA008DD78A /* Cubic_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F7528B688FA008DD78A /* Cubic_Calculator.xcdatamodeld */; };
 		CEDE1F8128B688FA008DD78A /* Cubic_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F8028B688FA008DD78A /* Cubic_CalculatorTests.swift */; };
 		CEDE1F8B28B688FA008DD78A /* Cubic_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F8A28B688FA008DD78A /* Cubic_CalculatorUITests.swift */; };
 		CEDE1F8D28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F8C28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift */; };
+		CEDE1FA028B68A47008DD78A /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F9F28B68A47008DD78A /* BasicTextField.swift */; };
+		CEDE1FA228B68A79008DD78A /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1FA128B68A79008DD78A /* Checkbox.swift */; };
+		CEDE1FAC28B7577C008DD78A /* Summation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1FAA28B7577C008DD78A /* Summation.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE7BB22E28B7969900057913 /* SummationDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummationDataService.swift; sourceTree = "<group>"; };
+		CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		CEDE1F6728B688F8008DD78A /* Cubic Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cubic Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDE1F6A28B688F8008DD78A /* Cubic_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubic_CalculatorApp.swift; sourceTree = "<group>"; };
-		CEDE1F6C28B688F8008DD78A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEDE1F6C28B688F8008DD78A /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		CEDE1F6E28B688FA008DD78A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEDE1F7128B688FA008DD78A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CEDE1F7328B688FA008DD78A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		CEDE1F7628B688FA008DD78A /* Cubic_Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cubic_Calculator.xcdatamodel; sourceTree = "<group>"; };
 		CEDE1F7C28B688FA008DD78A /* Cubic CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cubic CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDE1F8028B688FA008DD78A /* Cubic_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubic_CalculatorTests.swift; sourceTree = "<group>"; };
 		CEDE1F8628B688FA008DD78A /* Cubic CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cubic CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDE1F8A28B688FA008DD78A /* Cubic_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubic_CalculatorUITests.swift; sourceTree = "<group>"; };
 		CEDE1F8C28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubic_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEDE1F9F28B68A47008DD78A /* BasicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextField.swift; sourceTree = "<group>"; };
+		CEDE1FA128B68A79008DD78A /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		CEDE1FAB28B7577C008DD78A /* Summation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Summation.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +79,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7BB22D28B7967B00057913 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE7BB22E28B7969900057913 /* SummationDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CEDE1F5E28B688F8008DD78A = {
 			isa = PBXGroup;
 			children = (
+				CEDE1F9928B689E4008DD78A /* Components */,
 				CEDE1F6928B688F8008DD78A /* Cubic Calculator */,
 				CEDE1F7F28B688FA008DD78A /* Cubic CalculatorTests */,
 				CEDE1F8928B688FA008DD78A /* Cubic CalculatorUITests */,
@@ -98,22 +111,15 @@
 		CEDE1F6928B688F8008DD78A /* Cubic Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BB22D28B7967B00057913 /* Services */,
+				CEDE1F9A28B689EE008DD78A /* Helpers */,
 				CEDE1F6A28B688F8008DD78A /* Cubic_CalculatorApp.swift */,
-				CEDE1F6C28B688F8008DD78A /* ContentView.swift */,
+				CEDE1F6C28B688F8008DD78A /* CalculatorView.swift */,
 				CEDE1F6E28B688FA008DD78A /* Assets.xcassets */,
-				CEDE1F7328B688FA008DD78A /* Persistence.swift */,
-				CEDE1F7528B688FA008DD78A /* Cubic_Calculator.xcdatamodeld */,
-				CEDE1F7028B688FA008DD78A /* Preview Content */,
+				CEDE1FAA28B7577C008DD78A /* Summation.xcdatamodeld */,
+				CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */,
 			);
 			path = "Cubic Calculator";
-			sourceTree = "<group>";
-		};
-		CEDE1F7028B688FA008DD78A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CEDE1F7128B688FA008DD78A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		CEDE1F7F28B688FA008DD78A /* Cubic CalculatorTests */ = {
@@ -131,6 +137,46 @@
 				CEDE1F8C28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift */,
 			);
 			path = "Cubic CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		CEDE1F9928B689E4008DD78A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE1F9E28B68A28008DD78A /* Others */,
+				CEDE1F9D28B68A22008DD78A /* Buttons */,
+				CEDE1F9C28B68A17008DD78A /* EditTextFields */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEDE1F9A28B689EE008DD78A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CEDE1F9C28B68A17008DD78A /* EditTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE1F9F28B68A47008DD78A /* BasicTextField.swift */,
+			);
+			path = EditTextFields;
+			sourceTree = "<group>";
+		};
+		CEDE1F9D28B68A22008DD78A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		CEDE1F9E28B68A28008DD78A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE1FA128B68A79008DD78A /* Checkbox.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +283,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDE1F7228B688FA008DD78A /* Preview Assets.xcassets in Resources */,
 				CEDE1F6F28B688FA008DD78A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDE1F7728B688FA008DD78A /* Cubic_Calculator.xcdatamodeld in Sources */,
-				CEDE1F7428B688FA008DD78A /* Persistence.swift in Sources */,
-				CEDE1F6D28B688F8008DD78A /* ContentView.swift in Sources */,
+				CE7BB22F28B7969900057913 /* SummationDataService.swift in Sources */,
+				CE7BB23128B7A47700057913 /* CalculatorViewModel.swift in Sources */,
+				CEDE1F6D28B688F8008DD78A /* CalculatorView.swift in Sources */,
+				CEDE1FA228B68A79008DD78A /* Checkbox.swift in Sources */,
+				CEDE1FAC28B7577C008DD78A /* Summation.xcdatamodeld in Sources */,
 				CEDE1F6B28B688F8008DD78A /* Cubic_CalculatorApp.swift in Sources */,
+				CEDE1FA028B68A47008DD78A /* BasicTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +472,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Cubic Calculator/Preview Content\"";
 				DEVELOPMENT_TEAM = 59LC6PAR59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -453,7 +500,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Cubic Calculator/Preview Content\"";
 				DEVELOPMENT_TEAM = 59LC6PAR59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -593,13 +639,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CEDE1F7528B688FA008DD78A /* Cubic_Calculator.xcdatamodeld */ = {
+		CEDE1FAA28B7577C008DD78A /* Summation.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CEDE1F7628B688FA008DD78A /* Cubic_Calculator.xcdatamodel */,
+				CEDE1FAB28B7577C008DD78A /* Summation.xcdatamodel */,
 			);
-			currentVersion = CEDE1F7628B688FA008DD78A /* Cubic_Calculator.xcdatamodel */;
-			path = Cubic_Calculator.xcdatamodeld;
+			currentVersion = CEDE1FAB28B7577C008DD78A /* Summation.xcdatamodel */;
+			path = Summation.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
