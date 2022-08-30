@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Cubic Calculator
+
+  Created by Paweł Sobaszek on 30/08/2022.
+  
+*/
+
+
+"Dimension.diameter" = "Diameter";
+"Dimension.length" = "Length";
+
+"Unit.centimeters" = "Centimeters";
+
+"NumberValidator.onlyNumbers" = "Enter only the numbers";
+"NumberValidator.notEqualZero" = "Value couldn't be equal 0";
+
+"Button.remember" = "Remember";
+"Button.clear" = "Clear";
+"Button.add" = "Add";
+
+"sum" = "Sum";
+"id" = "ID";

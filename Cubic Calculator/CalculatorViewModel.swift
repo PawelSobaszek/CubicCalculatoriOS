@@ -13,6 +13,9 @@ protocol CalculatorViewModelProtocol: ObservableObject {
     var allSummations: [SummationEntity] { get }
     var allSummationsPublisher: Published<[SummationEntity]>.Publisher { get }
     
+    var sum: String { get }
+    var sumPublisher: Published<String>.Publisher { get }
+    
     var diameter: String { get set }
     var diameterBinding: Binding<String> { get }
     
@@ -22,11 +25,11 @@ protocol CalculatorViewModelProtocol: ObservableObject {
     var remeberLength: Bool { get set }
     var remeberLengthBinding: Binding<Bool> { get }
     
-    var diameterIsValid: Bool? { get }
-    var diameterIsValidPublisher: Published<Bool?>.Publisher { get }
+    var diameterValidator: NumberValidatorState { get }
+    var diameterValidatorPublisher: Published<NumberValidatorState>.Publisher { get }
     
-    var lengthIsValid: Bool? { get }
-    var lengthIsValidPublisher: Published<Bool?>.Publisher { get }
+    var lengthValidator: NumberValidatorState { get }
+    var lengthValidatorPublisher: Published<NumberValidatorState>.Publisher { get }
     
     var addButtonDisabled: Bool { get }
     var addButtonDisabledPublisher: Published<Bool>.Publisher { get }
@@ -40,20 +43,15 @@ final class CalculatorViewModel: CalculatorViewModelProtocol {
     @Published var allSummations: [SummationEntity] = []
     var allSummationsPublisher: Published<[SummationEntity]>.Publisher { $allSummations }
     
-    @Published var diameter: String = "" {
-        didSet {
-            validateAddButtonDisabled()
-        }
-    }
+    @Published var sum: String = ""
+    var sumPublisher: Published<String>.Publisher { $sum }
+    
+    @Published var diameter: String = ""
     var diameterBinding: Binding<String> {
         Binding(get: { self.diameter }, set: { self.diameter = $0 })
     }
     
-    @Published var length: String = "" {
-        didSet {
-            validateAddButtonDisabled()
-        }
-    }
+    @Published var length: String = ""
     var lengthBinding: Binding<String> {
         Binding(get: { self.length }, set: { self.length = $0 })
     }
@@ -63,11 +61,11 @@ final class CalculatorViewModel: CalculatorViewModelProtocol {
         Binding(get: { self.remeberLength }, set: { self.remeberLength = $0 })
     }
     
-    @Published var diameterIsValid: Bool? = nil
-    var diameterIsValidPublisher: Published<Bool?>.Publisher { $diameterIsValid }
+    @Published var diameterValidator: NumberValidatorState = .empty
+    var diameterValidatorPublisher: Published<NumberValidatorState>.Publisher { $diameterValidator }
     
-    @Published var lengthIsValid: Bool? = nil
-    var lengthIsValidPublisher: Published<Bool?>.Publisher { $lengthIsValid }
+    @Published var lengthValidator: NumberValidatorState = .empty
+    var lengthValidatorPublisher: Published<NumberValidatorState>.Publisher { $lengthValidator }
     
     @Published var addButtonDisabled: Bool = true
     var addButtonDisabledPublisher: Published<Bool>.Publisher { $addButtonDisabled }
@@ -98,42 +96,61 @@ final class CalculatorViewModel: CalculatorViewModelProtocol {
         }
     }
     
+    private func calculateSum(summations: [SummationEntity]) {
+        let sumResult = summations.sum(\.sum)
+        let digits = sumResult == 0 ? 0 : 3
+        sum = String(format: "%.\(digits)f", sumResult)
+    }
+    
     private func validateAddButtonDisabled() {
-        if Int(diameter) != nil && Int(length) != nil {
-            addButtonDisabled = false
-        } else {
-            addButtonDisabled = true
-        }
+        addButtonDisabled = diameterValidator == .valid && lengthValidator == .valid ? false : true
     }
     
     private func addSubscribers() {
+        $allSummations
+            .sink { [weak self] summations in
+                guard let self = self else { return }
+                self.calculateSum(summations: summations)
+            }
+            .store(in: &cancellables)
+        
         $diameter
             .sink { [weak self] value in
                 guard let self = self else { return }
-                if let _ = Int(value) {
-                    self.diameterIsValid = true
+                if let value = Int(value) {
+                    if value == 0 {
+                        self.diameterValidator = .zero
+                    } else {
+                        self.diameterValidator = .valid
+                    }
                 } else {
                     if value.isEmpty {
-                        self.diameterIsValid = nil
+                        self.diameterValidator = .empty
                     } else {
-                        self.diameterIsValid = false
+                        self.diameterValidator = .notNumber
                     }
                 }
+                self.validateAddButtonDisabled()
             }
             .store(in: &cancellables)
         
         $length
             .sink { [weak self] value in
                 guard let self = self else { return }
-                if let _ = Int(value) {
-                    self.lengthIsValid = true
+                if let value = Int(value) {
+                    if value == 0 {
+                        self.lengthValidator = .zero
+                    } else {
+                        self.lengthValidator = .valid
+                    }
                 } else {
                     if value.isEmpty {
-                        self.lengthIsValid = nil
+                        self.lengthValidator = .empty
                     } else {
-                        self.lengthIsValid = false
+                        self.lengthValidator = .notNumber
                     }
                 }
+                self.validateAddButtonDisabled()
             }
             .store(in: &cancellables)
         
