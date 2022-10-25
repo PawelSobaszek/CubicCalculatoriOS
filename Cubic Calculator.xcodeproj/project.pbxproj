@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		47D444AA874F99A190C703C4 /* Pods_Cubic_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3939A1329B8EC43F75E6F6C7 /* Pods_Cubic_CalculatorTests.framework */; };
 		CE0E398228BE32D8005185FD /* TextCubicMeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E398128BE32D8005185FD /* TextCubicMeters.swift */; };
+		CE372D402907EB3900E80566 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372D3F2907EB3900E80566 /* String.swift */; };
 		CE7BB22F28B7969900057913 /* SummationDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB22E28B7969900057913 /* SummationDataService.swift */; };
 		CE7BB23128B7A47700057913 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */; };
 		CE9F69B828BE189600EFA3C5 /* NumberValidatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F69B728BE189600EFA3C5 /* NumberValidatorState.swift */; };
@@ -25,7 +26,6 @@
 		CEDE1F8B28B688FA008DD78A /* Cubic_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F8A28B688FA008DD78A /* Cubic_CalculatorUITests.swift */; };
 		CEDE1F8D28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F8C28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift */; };
 		CEDE1FA028B68A47008DD78A /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F9F28B68A47008DD78A /* BasicTextField.swift */; };
-		CEDE1FA228B68A79008DD78A /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1FA128B68A79008DD78A /* Checkbox.swift */; };
 		CEDE1FAC28B7577C008DD78A /* Summation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1FAA28B7577C008DD78A /* Summation.xcdatamodeld */; };
 		D737A0428F10BBDEF9A42342 /* Pods_Cubic_Calculator_Cubic_CalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3E99E339C5B67253A48516 /* Pods_Cubic_Calculator_Cubic_CalculatorUITests.framework */; };
 		F37B3584C9C4544571BD6A57 /* Pods_Cubic_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0B1C0B8D5F26DC0A372B72 /* Pods_Cubic_Calculator.framework */; };
@@ -59,6 +59,7 @@
 		8DD4B3D61CABB15A9A35B406 /* Pods-Cubic Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cubic Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Cubic Calculator/Pods-Cubic Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		C95D5CD0B0ED9F7D8A77A2FB /* Pods-Cubic CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cubic CalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-Cubic CalculatorTests/Pods-Cubic CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0E398128BE32D8005185FD /* TextCubicMeters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCubicMeters.swift; sourceTree = "<group>"; };
+		CE372D3F2907EB3900E80566 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CE7BB22E28B7969900057913 /* SummationDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummationDataService.swift; sourceTree = "<group>"; };
 		CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		CE9F69B728BE189600EFA3C5 /* NumberValidatorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberValidatorState.swift; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		CEDE1F8A28B688FA008DD78A /* Cubic_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubic_CalculatorUITests.swift; sourceTree = "<group>"; };
 		CEDE1F8C28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubic_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEDE1F9F28B68A47008DD78A /* BasicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextField.swift; sourceTree = "<group>"; };
-		CEDE1FA128B68A79008DD78A /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		CEDE1FAB28B7577C008DD78A /* Summation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Summation.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +133,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE372D3D2907E88100E80566 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE1F9928B689E4008DD78A /* Components */,
+				CE372D3E2907E88600E80566 /* Main */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CE372D3E2907E88600E80566 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE1F6C28B688F8008DD78A /* CalculatorView.swift */,
+				CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CE372D412907F06F00E80566 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE1FAA28B7577C008DD78A /* Summation.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		CE7BB22D28B7967B00057913 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9F69C728BE2C7B00EFA3C5 /* Sequence+sum.swift */,
+				CE372D3F2907EB3900E80566 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,7 +204,6 @@
 		CEDE1F5E28B688F8008DD78A = {
 			isa = PBXGroup;
 			children = (
-				CEDE1F9928B689E4008DD78A /* Components */,
 				CEDE1F6928B688F8008DD78A /* Cubic Calculator */,
 				CEDE1F7F28B688FA008DD78A /* Cubic CalculatorTests */,
 				CEDE1F8928B688FA008DD78A /* Cubic CalculatorUITests */,
@@ -201,14 +227,13 @@
 			isa = PBXGroup;
 			children = (
 				CE9F69B928BE1B7E00EFA3C5 /* Resources */,
-				CE9F69B628BE188900EFA3C5 /* Model */,
-				CE7BB22D28B7967B00057913 /* Services */,
 				CEDE1F9A28B689EE008DD78A /* Helpers */,
+				CE9F69B628BE188900EFA3C5 /* Model */,
+				CE372D412907F06F00E80566 /* Data */,
+				CE7BB22D28B7967B00057913 /* Services */,
+				CE372D3D2907E88100E80566 /* UI */,
 				CEDE1F6A28B688F8008DD78A /* Cubic_CalculatorApp.swift */,
-				CEDE1F6C28B688F8008DD78A /* CalculatorView.swift */,
 				CEDE1F6E28B688FA008DD78A /* Assets.xcassets */,
-				CEDE1FAA28B7577C008DD78A /* Summation.xcdatamodeld */,
-				CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */,
 			);
 			path = "Cubic Calculator";
 			sourceTree = "<group>";
@@ -260,7 +285,6 @@
 		CEDE1F9E28B68A28008DD78A /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				CEDE1FA128B68A79008DD78A /* Checkbox.swift */,
 				CE9F69C428BE207A00EFA3C5 /* NumberValidatorErrorView.swift */,
 				CE9F69C928BE2CCB00EFA3C5 /* SummationsListView.swift */,
 			);
@@ -530,7 +554,7 @@
 				CE7BB23128B7A47700057913 /* CalculatorViewModel.swift in Sources */,
 				CEDE1F6D28B688F8008DD78A /* CalculatorView.swift in Sources */,
 				CE0E398228BE32D8005185FD /* TextCubicMeters.swift in Sources */,
-				CEDE1FA228B68A79008DD78A /* Checkbox.swift in Sources */,
+				CE372D402907EB3900E80566 /* String.swift in Sources */,
 				CEDE1FAC28B7577C008DD78A /* Summation.xcdatamodeld in Sources */,
 				CE9F69C128BE1EF900EFA3C5 /* Typealiases.swift in Sources */,
 				CE9F69B828BE189600EFA3C5 /* NumberValidatorState.swift in Sources */,

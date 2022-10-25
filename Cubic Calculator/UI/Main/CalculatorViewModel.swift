@@ -77,17 +77,18 @@ final class CalculatorViewModel: CalculatorViewModelProtocol {
         self.summationDataService = summationDataService
         addSubscribers()
     }
-    
+}
+
+extension CalculatorViewModel {
     func removeAllButtonTouchIn() {
         summationDataService.removeAll()
     }
     
     func addButtonTouchIn() {
-        summationDataService.add(diameter: Int(diameter) ?? 1, length: Int(length) ?? 1)
-        diameter = ""
-        if !remeberLength {
-            length = ""
-        }
+        guard let diameterValue = Int(diameter), let lengthValue = Int(length) else { return }
+        summationDataService.add(diameter: diameterValue, length: lengthValue)
+        diameter.setEmptyString()
+        if !remeberLength { length.setEmptyString() }
     }
     
     func deleteItem(offsets: IndexSet) {
@@ -95,10 +96,12 @@ final class CalculatorViewModel: CalculatorViewModelProtocol {
             summationDataService.remove(id: Int(entity.id))
         }
     }
-    
+}
+
+extension CalculatorViewModel {
     private func calculateSum(summations: [SummationEntity]) {
         let sumResult = summations.sum(\.sum)
-        let digits = sumResult == 0 ? 0 : 3
+        let digits = sumResult.isEqual(to: 0) ? 0 : 3
         sum = String(format: "%.\(digits)f", sumResult)
     }
     
@@ -109,47 +112,23 @@ final class CalculatorViewModel: CalculatorViewModelProtocol {
     private func addSubscribers() {
         $allSummations
             .sink { [weak self] summations in
-                guard let self = self else { return }
+                guard let self else { return }
                 self.calculateSum(summations: summations)
             }
             .store(in: &cancellables)
         
         $diameter
             .sink { [weak self] value in
-                guard let self = self else { return }
-                if let value = Int(value) {
-                    if value == 0 {
-                        self.diameterValidator = .zero
-                    } else {
-                        self.diameterValidator = .valid
-                    }
-                } else {
-                    if value.isEmpty {
-                        self.diameterValidator = .empty
-                    } else {
-                        self.diameterValidator = .notNumber
-                    }
-                }
+                guard let self else { return }
+                self.diameterValidator = value.numberValidator()
                 self.validateAddButtonDisabled()
             }
             .store(in: &cancellables)
         
         $length
             .sink { [weak self] value in
-                guard let self = self else { return }
-                if let value = Int(value) {
-                    if value == 0 {
-                        self.lengthValidator = .zero
-                    } else {
-                        self.lengthValidator = .valid
-                    }
-                } else {
-                    if value.isEmpty {
-                        self.lengthValidator = .empty
-                    } else {
-                        self.lengthValidator = .notNumber
-                    }
-                }
+                guard let self else { return }
+                self.lengthValidator = value.numberValidator()
                 self.validateAddButtonDisabled()
             }
             .store(in: &cancellables)

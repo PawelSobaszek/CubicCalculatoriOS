@@ -26,7 +26,7 @@ final class SummationDataService: SummationDataServiceProtocol {
     @Published var savedEntities: [SummationEntity] = []
     var savedEntitiesPublished: Published<[SummationEntity]> { _savedEntities }
     var savedEntitiesPublisher: Published<[SummationEntity]>.Publisher { $savedEntities }
-
+    
     init() {
         container = NSPersistentContainer(name: containerName)
         container.loadPersistentStores { (_, error) in
@@ -36,7 +36,9 @@ final class SummationDataService: SummationDataServiceProtocol {
             self.getSummations()
         }
     }
-        
+}
+
+extension SummationDataService {
     func add(diameter: Int, length: Int) {
         let entity = SummationEntity(context: container.viewContext)
         entity.id = Int32(savedEntities.count + 1)
@@ -58,7 +60,9 @@ final class SummationDataService: SummationDataServiceProtocol {
             delete(entity: entity)
         }
     }
-    
+}
+
+extension SummationDataService {
     private func updateIDs() {
         var id = 1
         savedEntities.forEach { entity in
@@ -71,7 +75,7 @@ final class SummationDataService: SummationDataServiceProtocol {
     private func getSum(diameter: Int, length: Int) -> Double {
         return ((Double(diameter) / 200) * (Double(diameter) / 200) * (Double(length) / 100) * Double.pi)
     }
-        
+    
     private func getSummations() {
         let request = NSFetchRequest<SummationEntity>(entityName: entityName)
         do {

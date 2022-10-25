@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct TextCubicMeters: View {
-    let value: String
+    private let value: String
+    
+    init(value: String) {
+        self.value = value
+    }
     
     var body: some View {
         Text("\(value)m")

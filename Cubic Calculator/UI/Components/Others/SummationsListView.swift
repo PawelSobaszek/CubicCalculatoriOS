@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct SummationsListView: View {
-    let allSummations: [SummationEntity]
-    let onDeleteAction: (_ offsets: IndexSet) -> Void
+    private let allSummations: [SummationEntity]
+    private let onDeleteAction: (_ offsets: IndexSet) -> Void
+    
+    init(allSummations: [SummationEntity], onDeleteAction: @escaping (_: IndexSet) -> Void) {
+        self.allSummations = allSummations
+        self.onDeleteAction = onDeleteAction
+    }
     
     var body: some View {
         List {

@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct NumberValidatorErrorView: View {
-    var numberValidator: NumberValidatorState = .empty
+    private var numberValidator: NumberValidatorState
+    
+    init(numberValidator: NumberValidatorState = .empty) {
+        self.numberValidator = numberValidator
+    }
 
     var body: some View {
         switch numberValidator {

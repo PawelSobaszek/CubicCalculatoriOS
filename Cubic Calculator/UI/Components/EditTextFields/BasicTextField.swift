@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct BasicTextField: View {
-    let placeholder: String
-    var hint: String? = nil
+    private let placeholder: String
+    private var hint: String?
     
-    @Binding var value: String
+    @Binding private var value: String
+    
+    init(placeholder: String, hint: String? = nil, value: Binding<String>) {
+        self.placeholder = placeholder
+        self.hint = hint
+        self._value = value
+    }
 
     var body: some View {
         VStack {
@@ -19,7 +25,7 @@ struct BasicTextField: View {
                 .textFieldStyle(.roundedBorder)
                 .padding()
             
-            if let hint = hint {
+            if let hint {
                 Text(hint)
                     .font(.footnote)
             }
