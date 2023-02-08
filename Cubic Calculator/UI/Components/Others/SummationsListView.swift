@@ -19,16 +19,16 @@ struct SummationsListView: View {
     var body: some View {
         List {
             HStack {
-                Text(Strings.id())
+                Text(Resources.strings.id())
                     .font(.headline)
                     .frame(maxWidth: .infinity)
-                Text(Strings.dimensionDiameter())
+                Text(Resources.strings.dimensionDiameter())
                     .font(.headline)
                     .frame(maxWidth: .infinity)
-                Text(Strings.dimensionLength())
+                Text(Resources.strings.dimensionLength())
                     .font(.headline)
                     .frame(maxWidth: .infinity)
-                Text(Strings.sum())
+                Text(Resources.strings.sum())
                     .font(.headline)
                     .frame(maxWidth: .infinity)
             }

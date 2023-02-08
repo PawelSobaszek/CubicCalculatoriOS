@@ -16,18 +16,23 @@ struct CalculatorView<ViewModel: CalculatorViewModelProtocol>: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            BasicTextField(placeholder: Strings.dimensionDiameter(), hint: Strings.unitCentimeters(), value: viewModel.diameterBinding)
-                .padding()
+            BasicTextField(placeholder: Resources.strings.dimensionDiameter(),
+                           hint: Resources.strings.unitCentimeters(),
+                           value: viewModel.diameterBinding)
+            .padding()
+            
             NumberValidatorErrorView(numberValidator: viewModel.diameterValidator)
             
-            BasicTextField(placeholder: Strings.dimensionLength(), hint: Strings.unitCentimeters(), value: viewModel.lengthBinding)
-                .padding()
+            BasicTextField(placeholder: Resources.strings.dimensionLength(),
+                           hint: Resources.strings.unitCentimeters(),
+                           value: viewModel.lengthBinding)
+            .padding()
             NumberValidatorErrorView(numberValidator: viewModel.lengthValidator)
-
+            
             HStack {
                 Toggle("", isOn: viewModel.remeberLengthBinding)
                     .labelsHidden()
-                Text(Strings.buttonRemember())
+                Text(Resources.strings.buttonRemember())
                     .font(.callout)
             } // HSTACK
             .padding(.vertical)
@@ -35,11 +40,11 @@ struct CalculatorView<ViewModel: CalculatorViewModelProtocol>: View {
             HStack {
                 Spacer()
                 
-                Button(Strings.buttonClear(), action: viewModel.removeAllButtonTouchIn)
+                Button(Resources.strings.buttonClear(), action: viewModel.removeAllButtonTouchIn)
                 
                 Spacer()
                 
-                Button(Strings.buttonAdd(), action: viewModel.addButtonTouchIn)
+                Button(Resources.strings.buttonAdd(), action: viewModel.addButtonTouchIn)
                     .disabled(viewModel.addButtonDisabled)
                 
                 Spacer()
@@ -49,12 +54,15 @@ struct CalculatorView<ViewModel: CalculatorViewModelProtocol>: View {
             
             TextCubicMeters(value: viewModel.sum)
             
-            Text(Strings.sum())
+            Text(Resources.strings.sum())
                 .font(.footnote)
             
-            SummationsListView(allSummations: viewModel.allSummations, onDeleteAction: viewModel.deleteItem(offsets:))
-                .padding(.top)
-                .frame(maxHeight: .infinity)
+            SummationsListView(
+                allSummations: viewModel.allSummations,
+                onDeleteAction: viewModel.deleteItem(offsets:)
+            )
+            .padding(.top)
+            .frame(maxHeight: .infinity)
         } // VSTACK
     }
 }

@@ -13,14 +13,14 @@ struct NumberValidatorErrorView: View {
     init(numberValidator: NumberValidatorState = .empty) {
         self.numberValidator = numberValidator
     }
-
+    
     var body: some View {
         switch numberValidator {
         case .notNumber:
-            Text(Strings.numberValidatorOnlyNumbers())
+            Text(Resources.strings.numberValidatorOnlyNumbers())
                 .foregroundColor(.red)
         case .zero:
-            Text(Strings.numberValidatorNotEqualZero())
+            Text(Resources.strings.numberValidatorNotEqualZero())
                 .foregroundColor(.red)
         case .valid, .empty:
             EmptyView()

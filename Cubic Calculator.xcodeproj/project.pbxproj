@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47D444AA874F99A190C703C4 /* Pods_Cubic_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3939A1329B8EC43F75E6F6C7 /* Pods_Cubic_CalculatorTests.framework */; };
 		CE0E398228BE32D8005185FD /* TextCubicMeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E398128BE32D8005185FD /* TextCubicMeters.swift */; };
+		CE202ECE299407A900C842DA /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CE202ECD299407A900C842DA /* RswiftLibrary */; };
+		CE202ED42994092000C842DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE202ED32994092000C842DA /* Utils.swift */; };
 		CE372D402907EB3900E80566 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372D3F2907EB3900E80566 /* String.swift */; };
 		CE7BB22F28B7969900057913 /* SummationDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB22E28B7969900057913 /* SummationDataService.swift */; };
 		CE7BB23128B7A47700057913 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */; };
 		CE9F69B828BE189600EFA3C5 /* NumberValidatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F69B728BE189600EFA3C5 /* NumberValidatorState.swift */; };
 		CE9F69BD28BE1CFF00EFA3C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9F69BF28BE1CFF00EFA3C5 /* Localizable.strings */; };
-		CE9F69C128BE1EF900EFA3C5 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F69C028BE1EF900EFA3C5 /* Typealiases.swift */; };
-		CE9F69C328BE201600EFA3C5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F69C228BE201600EFA3C5 /* R.generated.swift */; };
 		CE9F69C528BE207A00EFA3C5 /* NumberValidatorErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F69C428BE207A00EFA3C5 /* NumberValidatorErrorView.swift */; };
 		CE9F69C828BE2C7B00EFA3C5 /* Sequence+sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F69C728BE2C7B00EFA3C5 /* Sequence+sum.swift */; };
 		CE9F69CA28BE2CCB00EFA3C5 /* SummationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F69C928BE2CCB00EFA3C5 /* SummationsListView.swift */; };
@@ -27,8 +26,6 @@
 		CEDE1F8D28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F8C28B688FA008DD78A /* Cubic_CalculatorUITestsLaunchTests.swift */; };
 		CEDE1FA028B68A47008DD78A /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1F9F28B68A47008DD78A /* BasicTextField.swift */; };
 		CEDE1FAC28B7577C008DD78A /* Summation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1FAA28B7577C008DD78A /* Summation.xcdatamodeld */; };
-		D737A0428F10BBDEF9A42342 /* Pods_Cubic_Calculator_Cubic_CalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3E99E339C5B67253A48516 /* Pods_Cubic_Calculator_Cubic_CalculatorUITests.framework */; };
-		F37B3584C9C4544571BD6A57 /* Pods_Cubic_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0B1C0B8D5F26DC0A372B72 /* Pods_Cubic_Calculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,23 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B3E99E339C5B67253A48516 /* Pods_Cubic_Calculator_Cubic_CalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cubic_Calculator_Cubic_CalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BC484208E3486BCFD15860C /* Pods-Cubic Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cubic Calculator.release.xcconfig"; path = "Target Support Files/Pods-Cubic Calculator/Pods-Cubic Calculator.release.xcconfig"; sourceTree = "<group>"; };
-		3939A1329B8EC43F75E6F6C7 /* Pods_Cubic_CalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cubic_CalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B1E9B08F5BEEFED52003F58 /* Pods-Cubic CalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cubic CalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-Cubic CalculatorTests/Pods-Cubic CalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		3D0B1C0B8D5F26DC0A372B72 /* Pods_Cubic_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cubic_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8083C2C5A9F0F22BDEE9A975 /* Pods-Cubic Calculator-Cubic CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cubic Calculator-Cubic CalculatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Cubic Calculator-Cubic CalculatorUITests/Pods-Cubic Calculator-Cubic CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		85AE51CD13FDAAA0E4E69ACC /* Pods-Cubic Calculator-Cubic CalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cubic Calculator-Cubic CalculatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cubic Calculator-Cubic CalculatorUITests/Pods-Cubic Calculator-Cubic CalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DD4B3D61CABB15A9A35B406 /* Pods-Cubic Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cubic Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Cubic Calculator/Pods-Cubic Calculator.debug.xcconfig"; sourceTree = "<group>"; };
-		C95D5CD0B0ED9F7D8A77A2FB /* Pods-Cubic CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cubic CalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-Cubic CalculatorTests/Pods-Cubic CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0E398128BE32D8005185FD /* TextCubicMeters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCubicMeters.swift; sourceTree = "<group>"; };
+		CE202ED32994092000C842DA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CE372D3F2907EB3900E80566 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CE7BB22E28B7969900057913 /* SummationDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummationDataService.swift; sourceTree = "<group>"; };
 		CE7BB23028B7A47700057913 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		CE9F69B728BE189600EFA3C5 /* NumberValidatorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberValidatorState.swift; sourceTree = "<group>"; };
 		CE9F69BE28BE1CFF00EFA3C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CE9F69C028BE1EF900EFA3C5 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		CE9F69C228BE201600EFA3C5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		CE9F69C428BE207A00EFA3C5 /* NumberValidatorErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberValidatorErrorView.swift; sourceTree = "<group>"; };
 		CE9F69C728BE2C7B00EFA3C5 /* Sequence+sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+sum.swift"; sourceTree = "<group>"; };
 		CE9F69C928BE2CCB00EFA3C5 /* SummationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummationsListView.swift; sourceTree = "<group>"; };
@@ -87,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F37B3584C9C4544571BD6A57 /* Pods_Cubic_Calculator.framework in Frameworks */,
+				CE202ECE299407A900C842DA /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D444AA874F99A190C703C4 /* Pods_Cubic_CalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,36 +89,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D737A0428F10BBDEF9A42342 /* Pods_Cubic_Calculator_Cubic_CalculatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		854DCDBEB616E171A5B2E878 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3D0B1C0B8D5F26DC0A372B72 /* Pods_Cubic_Calculator.framework */,
-				1B3E99E339C5B67253A48516 /* Pods_Cubic_Calculator_Cubic_CalculatorUITests.framework */,
-				3939A1329B8EC43F75E6F6C7 /* Pods_Cubic_CalculatorTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8DDF191E08D040074B0380A8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8DD4B3D61CABB15A9A35B406 /* Pods-Cubic Calculator.debug.xcconfig */,
-				1BC484208E3486BCFD15860C /* Pods-Cubic Calculator.release.xcconfig */,
-				85AE51CD13FDAAA0E4E69ACC /* Pods-Cubic Calculator-Cubic CalculatorUITests.debug.xcconfig */,
-				8083C2C5A9F0F22BDEE9A975 /* Pods-Cubic Calculator-Cubic CalculatorUITests.release.xcconfig */,
-				C95D5CD0B0ED9F7D8A77A2FB /* Pods-Cubic CalculatorTests.debug.xcconfig */,
-				3B1E9B08F5BEEFED52003F58 /* Pods-Cubic CalculatorTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		CE372D3D2907E88100E80566 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +140,6 @@
 		CE9F69B928BE1B7E00EFA3C5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CE9F69C228BE201600EFA3C5 /* R.generated.swift */,
 				CE9F69BF28BE1CFF00EFA3C5 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -208,8 +169,6 @@
 				CEDE1F7F28B688FA008DD78A /* Cubic CalculatorTests */,
 				CEDE1F8928B688FA008DD78A /* Cubic CalculatorUITests */,
 				CEDE1F6828B688F8008DD78A /* Products */,
-				8DDF191E08D040074B0380A8 /* Pods */,
-				854DCDBEB616E171A5B2E878 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9F69C628BE2C6A00EFA3C5 /* Extensions */,
-				CE9F69C028BE1EF900EFA3C5 /* Typealiases.swift */,
+				CE202ED32994092000C842DA /* Utils.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -298,18 +257,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEDE1F9028B688FA008DD78A /* Build configuration list for PBXNativeTarget "Cubic Calculator" */;
 			buildPhases = (
-				96DCE612C4900EB264326B86 /* [CP] Check Pods Manifest.lock */,
-				CE9F69BA28BE1B9200EFA3C5 /* R.swift */,
 				CEDE1F6328B688F8008DD78A /* Sources */,
 				CEDE1F6428B688F8008DD78A /* Frameworks */,
 				CEDE1F6528B688F8008DD78A /* Resources */,
-				15DAA9FD3CCC4B66285A9A27 /* [CP] Embed Pods Frameworks */,
+				CE202EDA29940D8300C842DA /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE202ED0299407BB00C842DA /* PBXTargetDependency */,
 			);
 			name = "Cubic Calculator";
+			packageProductDependencies = (
+				CE202ECD299407A900C842DA /* RswiftLibrary */,
+			);
 			productName = "Cubic Calculator";
 			productReference = CEDE1F6728B688F8008DD78A /* Cubic Calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -318,7 +279,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEDE1F9328B688FA008DD78A /* Build configuration list for PBXNativeTarget "Cubic CalculatorTests" */;
 			buildPhases = (
-				409783946A6F7A1E630C6D4F /* [CP] Check Pods Manifest.lock */,
 				CEDE1F7828B688FA008DD78A /* Sources */,
 				CEDE1F7928B688FA008DD78A /* Frameworks */,
 				CEDE1F7A28B688FA008DD78A /* Resources */,
@@ -337,11 +297,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEDE1F9628B688FA008DD78A /* Build configuration list for PBXNativeTarget "Cubic CalculatorUITests" */;
 			buildPhases = (
-				4A1304FFCD5B058801A9516F /* [CP] Check Pods Manifest.lock */,
 				CEDE1F8228B688FA008DD78A /* Sources */,
 				CEDE1F8328B688FA008DD78A /* Frameworks */,
 				CEDE1F8428B688FA008DD78A /* Resources */,
-				48E9C20B2CDE657CD2C37A6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,6 +343,9 @@
 				Base,
 			);
 			mainGroup = CEDE1F5E28B688F8008DD78A;
+			packageReferences = (
+				CE202ECC299407A900C842DA /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			productRefGroup = CEDE1F6828B688F8008DD78A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,107 +384,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15DAA9FD3CCC4B66285A9A27 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cubic Calculator/Pods-Cubic Calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cubic Calculator/Pods-Cubic Calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cubic Calculator/Pods-Cubic Calculator-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		409783946A6F7A1E630C6D4F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Cubic CalculatorTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		48E9C20B2CDE657CD2C37A6B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cubic Calculator-Cubic CalculatorUITests/Pods-Cubic Calculator-Cubic CalculatorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cubic Calculator-Cubic CalculatorUITests/Pods-Cubic Calculator-Cubic CalculatorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cubic Calculator-Cubic CalculatorUITests/Pods-Cubic Calculator-Cubic CalculatorUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A1304FFCD5B058801A9516F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Cubic Calculator-Cubic CalculatorUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96DCE612C4900EB264326B86 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Cubic Calculator-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE9F69BA28BE1B9200EFA3C5 /* R.swift */ = {
+		CE202EDA29940D8300C842DA /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -533,15 +394,14 @@
 			);
 			inputPaths = (
 			);
-			name = R.swift;
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/Cubic Calculator/Resources/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Cubic Calculator/Resources/R.generated.swift\"\n\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -552,14 +412,13 @@
 			files = (
 				CE7BB22F28B7969900057913 /* SummationDataService.swift in Sources */,
 				CE7BB23128B7A47700057913 /* CalculatorViewModel.swift in Sources */,
+				CE202ED42994092000C842DA /* Utils.swift in Sources */,
 				CEDE1F6D28B688F8008DD78A /* CalculatorView.swift in Sources */,
 				CE0E398228BE32D8005185FD /* TextCubicMeters.swift in Sources */,
 				CE372D402907EB3900E80566 /* String.swift in Sources */,
 				CEDE1FAC28B7577C008DD78A /* Summation.xcdatamodeld in Sources */,
-				CE9F69C128BE1EF900EFA3C5 /* Typealiases.swift in Sources */,
 				CE9F69B828BE189600EFA3C5 /* NumberValidatorState.swift in Sources */,
 				CE9F69CA28BE2CCB00EFA3C5 /* SummationsListView.swift in Sources */,
-				CE9F69C328BE201600EFA3C5 /* R.generated.swift in Sources */,
 				CE9F69C528BE207A00EFA3C5 /* NumberValidatorErrorView.swift in Sources */,
 				CEDE1F6B28B688F8008DD78A /* Cubic_CalculatorApp.swift in Sources */,
 				CE9F69C828BE2C7B00EFA3C5 /* Sequence+sum.swift in Sources */,
@@ -587,6 +446,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE202ED0299407BB00C842DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CE202ECF299407BB00C842DA /* RswiftGenerateInternalResources */;
+		};
 		CEDE1F7E28B688FA008DD78A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEDE1F6628B688F8008DD78A /* Cubic Calculator */;
@@ -727,7 +590,6 @@
 		};
 		CEDE1F9128B688FA008DD78A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DD4B3D61CABB15A9A35B406 /* Pods-Cubic Calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -756,7 +618,6 @@
 		};
 		CEDE1F9228B688FA008DD78A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BC484208E3486BCFD15860C /* Pods-Cubic Calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -785,7 +646,6 @@
 		};
 		CEDE1F9428B688FA008DD78A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C95D5CD0B0ED9F7D8A77A2FB /* Pods-Cubic CalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -806,7 +666,6 @@
 		};
 		CEDE1F9528B688FA008DD78A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B1E9B08F5BEEFED52003F58 /* Pods-Cubic CalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -827,7 +686,6 @@
 		};
 		CEDE1F9728B688FA008DD78A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85AE51CD13FDAAA0E4E69ACC /* Pods-Cubic Calculator-Cubic CalculatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -846,7 +704,6 @@
 		};
 		CEDE1F9828B688FA008DD78A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8083C2C5A9F0F22BDEE9A975 /* Pods-Cubic Calculator-Cubic CalculatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -903,6 +760,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE202ECC299407A900C842DA /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE202ECD299407A900C842DA /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE202ECC299407A900C842DA /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		CE202ECF299407BB00C842DA /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CEDE1FAA28B7577C008DD78A /* Summation.xcdatamodeld */ = {

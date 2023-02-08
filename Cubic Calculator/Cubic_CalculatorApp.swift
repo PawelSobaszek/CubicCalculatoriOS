@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Cubic_CalculatorApp: App {
+struct Cubic_CalculatorApp: App {    
     var body: some Scene {
         WindowGroup {
             let calculatorViewModel = CalculatorViewModel()
